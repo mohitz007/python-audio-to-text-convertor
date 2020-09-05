@@ -11,7 +11,6 @@ for file in dir:
             try:
                 # print("google thinks " + r.recognize_google(audio) + "\n \n \n \n")
                 name = os.path.splitext(file)[0] + ".txt"
-                # print(name)
                 f = open( name , "w")
                 f.write(r.recognize_google(audio))
                 f.close()
